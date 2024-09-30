@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>Custom WYSIWYG Editor</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    
+<div class="editor-container">
+    <div class="editor-toolbar">
+        <button id="bold-button" title="Bold"><i class="fas fa-bold"></i></button>
+        <button id="italic-button" title="Italic"><i class="fas fa-italic"></i></button>
+        
+        <select id="font-size" title="Font Size">
+            <option value="1">Small</option>
+            <option value="3" selected>Normal</option>
+            <option value="5">Large</option>
+        </select>
+
+        <select id="font-family" title="Font Family">
+            <option value="Arial">Arial</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Times New Roman">Times New Roman</option>
+        </select>
+        
+        <div class="color-picker" title="Text Color">
+            <button id="color-button" title="Pick Color"><i class="fas fa-paint-brush"></i></button>
+            <div id="color-options"></div>
+        </div>
+    </div>
+    
+    <textarea id="text-area" class="editor-textarea" placeholder="Start typing here..."></textarea>
+</div>
+<script src="./funtions.js"></script>
+</body>
+</html>
